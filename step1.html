@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>تدرين بية شكد احبج مو؟</title>
+<style>
+body { font-family: 'Cairo', sans-serif; text-align:center; background: linear-gradient(135deg,#ffe6f0,#ffb3d1); padding:50px 20px; overflow-x:hidden; }
+h1{ color:#ff1775; font-size:32px; }
+button{ background:#ff77aa; color:white; border:none; padding:15px 30px; margin:10px; border-radius:12px; font-size:20px; cursor:pointer; }
+button:hover{ background:#ff3388; }
+.heart-fall{ position:fixed; top:-20px; font-size:28px; opacity:0.8; animation:fall 5s linear infinite; }
+@keyframes fall{ 0%{transform:translateY(0);opacity:1;} 100%{transform:translateY(120vh);opacity:0;} }
+</style>
+</head>
+<body>
+
+<h1>تعرفين اني شكد احبج مو؟ </h1>
+<button onclick="location.href='page3.html'">نعم</button>
+
+<script>
+for(let i=0;i<15;i++){
+    let h=document.createElement("div");
+    h.className="heart-fall";
+    h.innerHTML="💖";
+    h.style.left=(Math.random()*100)+"vw";
+    h.style.animationDuration=(3+Math.random()*5)+"s";
+    document.body.appendChild(h);
+}
+</script>
+
+</body>
+</html>
